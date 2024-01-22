@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Censo Municipal de Mascotas y Animales Domésticos</title>
+  <!-- Agregar los enlaces a Bootstrap CSS y JS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <style>
+    body {
+      background-color: beige;
+    }
+    .custom-container {
+      max-width: 800px; /* Limitar el ancho para que no se vea demasiado amplio */
+      border: 2px solid blue;
+      background-color: beige;
+      padding: 20px;
+    }
+    .custom-image {
+      width: 100%; /* Las imágenes ocuparán el 100% del ancho del contenedor */
+      height: auto; /* Mantener la relación de aspecto original de las imágenes */
+      cursor: pointer; /* Cambiar el cursor al hacer clic en las imágenes */
+    }
+  </style>
+</head>
+<body>
+  <div class="container custom-container">
+    <h1 class="text-center">Censo Municipal de Mascotas y Animales Domésticos</h1> 
+    <!-- Agregar las imágenes dentro de un div con la clase "row" -->
+    <div class="row">
+      <div class="col-md-4">
+        <a href="#" onclick="openFile('cen2.html')">
+          <img src="Pochi_Gatuno.jpg" class="img-fluid custom-image" alt="Pochi Gatuno" data-target="cen2.html">
+        </a>
+      </div>
+      <div class="col-md-4">
+        <a href="#" onclick="openFile('ce1.html')">
+          <img src="DIANA.jpg" class="img-fluid custom-image" alt="DIANA" data-target="ce1.html">
+        </a>
+      </div>
+      <div class="col-md-4">
+        <a href="#" onclick="openFile('otras.html')">
+          <img src="collage.jpg" class="img-fluid custom-image" alt="Collage" data-target="otras.html">
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Agregar el enlace al archivo de JavaScript de Bootstrap -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+  <script>
+    function openFile(targetUrl) {
+      window.open(targetUrl, '_blank');
+      window.close();
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Censo de mascotas: OTRAS</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <style>
+    body {
+      background-color: gray;
+    }
+    .custom-container {
+      width: 600px; /* Aumentamos el ancho para adaptar los nuevos campos */
+      margin: auto;
+      border: 2px solid blue;
+      background-color: beige;
+      padding: 20px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="custom-container">
+    <h1>Registro de mascota: OTRAS</h1>
+    <form id="registro-form">
+      <div class="form-group">
+        <label for="nombre">Nombre de la Mascota</label>
+        <input type="text" class="form-control" id="nombre" placeholder="Nombre de la mascota">
+      </div>
+      <div class="form-group">
+        <label for="raza">Raza</label>
+        <input type="text" class="form-control" id="raza" placeholder="Raza de la mascota">
+      </div>
+      <div class="form-group">
+        <label for="edad">Edad</label>
+        <input type="number" class="form-control" id="edad" placeholder="Edad de la mascota">
+      </div>
+      <div class="form-group">
+        <label for="tamano">Tamaño</label>
+        <select class="form-control" id="tamano">
+          <option>Pequeño</option>
+          <option>Mediano</option>
+          <option>Grande</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="vacunado">¿Está vacunado?</label>
+        <select class="form-control" id="vacunado">
+          <option>Seleccionar</option>
+          <option>Sí</option>
+          <option>No</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="vacunas">¿Qué vacunas tiene?</label>
+        <select class="form-control" id="vacunas">
+          <option>Seleccionar</option>
+          <option>Moquillo canino</option>
+          <option>Hepatitis infecciosa (Adenovirus)</option>
+          <option>Parvovirus</option>
+          <option>Rabia canina</option>
+          <option>Leptospirosis</option>
+          <option>Parainfluenza canina (Quintuple)</option>
+          <option>Coronavirus (Quintuple + Coronavirus)</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="genero">Género</label>
+        <select class="form-control" id="genero">
+          <option>Seleccionar</option>
+          <option>Macho</option>
+          <option>Hembra</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="esterilizado">¿Está esterilizado?</label>
+        <select class="form-control" id="esterilizado">
+          <option>Seleccionar</option>
+          <option>Sí</option>
+          <option>No</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="propietario">Nombre del propietario</label>
+        <input type="text" class="form-control" id="propietario" placeholder="Nombre del propietario">
+      </div>
+      <div class="form-group">
+        <label for="domicilio">Domicilio</label>
+        <input type="text" class="form-control" id="domicilio" placeholder="Domicilio del propietario">
+      </div>
+      
+      <button type="submit" class="btn btn-primary" id="registrar-btn">Registrar</button>
+    </form>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="script.js"></script>
+  <script>
+    $(document).ready(function() {
+      $('#registrar-btn').click(function(e) {
+        e.preventDefault(); // Evita el envío del formulario
+
+        // Aquí puedes agregar cualquier lógica adicional antes de redirigir
+
+        window.location.href = "inicio.html"; // Redirige a inicio.html
+      });
+    });
+  </script>
+</body>
+</html>
